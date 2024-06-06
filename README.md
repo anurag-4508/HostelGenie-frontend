@@ -1,6 +1,5 @@
-# HostelGenie
-
-![HostelGenie Logo](https://snipboard.io/hUt8AM.jpg)
+# HostelGenie ![HostelGenie Logo](https://snipboard.io/hUt8AM.jpg)
+[Live Project - Click here](https://hostelgenie.netlify.app/)
 
 Welcome to **HostelGenie**, a comprehensive hostel management application designed to simplify and streamline the management of hostel activities. Whether you're an admin or a student, HostelGenie offers a range of features to make hostel life easier and more organized.
 
@@ -8,8 +7,6 @@ Welcome to **HostelGenie**, a comprehensive hostel management application design
 
 ### Login/Signup
 - Secure user authentication for both admins and students.
-
-### Admin Panel
 - **Registration of New Students**: Easily register new students into the system.
 - **Marking Attendance**: Track and record student attendance efficiently.
 - **Handling Complaints**: Manage and resolve complaints raised by students.
@@ -26,7 +23,7 @@ Welcome to **HostelGenie**, a comprehensive hostel management application design
 
 ## Screenshots
 
-### Admin Panel
+
 *Landing Page*
 ![Admin Panel](https://snipboard.io/wVPLex.jpg)
 
@@ -45,9 +42,6 @@ Welcome to **HostelGenie**, a comprehensive hostel management application design
 *Contact Us*
 ![Admin Panel](https://snipboard.io/n0JaTl.jpg)
 
-### Student Panel
-*Dashboard*
-![Student Panel](path/to/your/student_panel_screenshot.png)
 
 ## Getting Started
 
@@ -61,10 +55,45 @@ Follow these instructions to set up the HostelGenie project on your local machin
 
 ### Installation
 
-1. **Clone the Repository**
-   ```bash
-   git clone https://github.com/yourusername/hostelgenie.git
-   cd hostelgenie
+**Clone the repository and install the dependencies.**
+```sh
+cd client
+npm i
+```
+```sh
+cd ../server
+npm i
+```
+
+```sh
+cd ../
+npm i -g concurrently
+```
+
+## Setup DB
+- Create a mongodb database named `hostel`
+- Create collections and given names like for `hostel.users.json` --> `users` in mongoCollections
+- Add data by importing file like `hostel.users.json`
+
+## Usage
+
+```sh
+npm run dev
+```
+
+## Login Details
+- AdminLogin
+    - admin@gmail.com
+    - Password: 123456789
+- Login
+    - anand@gmail.com
+    - Password: 123456789
+
+## Add .env file in backend folder with following content
+```
+MONGO_URI=<Your URI>
+JWT_SECRET = <Your Key>
+```
 
 
 
